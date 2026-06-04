@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange Rate Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Currency data, beautifully visualized</p>
+      <h1>Exchange Rate Visualizer</h1>
+      <p class="hero-copy">Pick a base currency to view the latest exchange rates in a simple chart.</p>
+    </header>
+ 
+    <section class="controls-panel">
+      <label for="currencySelector">Select base currency</label>
+      <select id="currencySelector"></select>
+      <div id="message" aria-live="polite"></div>
+    </section>
+ 
+    <section class="chart-panel">
+      <canvas id="rateCanvas" width="900" height="520"></canvas>
+    </section>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
